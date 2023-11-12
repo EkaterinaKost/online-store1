@@ -4,27 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="/les1/info/about.html">Главная</a>
-    <a href="/les1/info/about.html">Обо мне</a>
-    <a href="#">Оставить заявку</a>
-    <h1>
+    <div class="menu">
+        <a href="/les1/info/about.html" class="menu__link">Главная</a>
+        <a href="/les1/info/about.html " class="menu__link">Обо мне</a>
+        <a href="./form.html" class="menu__link">Оставить заявку</a>
+    </div>
+    
+    <h1 class="head">
         Оставить заявку
     </h1>
     <form action="">
         <label for="name">Введите ваше имя</label>
-        <input placeholder="введите имя" type="name" id="name">
+        <input class="input" placeholder="введите имя" type="name" id="name">
         <br>
         <br>
         <label for="email">Введите адрес почты</label>
-        <input placeholder="введите почту" type="email" id="email">
+        <input class="input" placeholder="введите почту" type="email" id="email">
         <br>
         <br>
-        <input type="submit" value="отправить">
+        <input class="form__button" type="submit" value="отправить">
         <br>
         <br>
-        <input type="reset" value="очистить форму" >
+        <input class="form__button" type="reset" value="очистить форму" >
         <br>
 
     </form>
