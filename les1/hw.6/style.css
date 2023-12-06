@@ -9,7 +9,9 @@
 a {
     text-decoration: none;
   }
-  
+img{
+    width: 100%; 
+}
  
   
 .center {
@@ -58,6 +60,20 @@ a {
     border-left: 12px solid #F16d7f;
     padding-left: 16px;
     margin-bottom: 90px;
+ }
+ .promo_heading h1{
+    color: #222;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+ }
+ .promo_heading h2{
+    color: #222;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
  }
  .pink_colored{
     color: #F16D7F;
@@ -108,7 +124,6 @@ a {
     padding-top: 96px;
 }
 .catalog{
-   /* margin-left: 180px;*/
     margin-top: 48px;
     display: grid;
     grid-template-columns: repeat(auto-fit, 360px);
@@ -149,4 +164,45 @@ a {
     line-height: 19px;
     background-color: #fff;
     border: 1px solid#ff6a6a;
+}
+@media(max-width: 1200px){
+    .center{
+        padding-left: calc(50% - 500px);
+        padding-right: calc(50% - 500px);
+    }
+    .promo_heading h1{
+        font-size: 46px;
+    }
+    .promo_heading h2{
+        font-size: 30px;
+    }
+    .offer{        
+        grid-template-columns: repeat(3, 300px);
+    }
+}
+@media(max-width: 1024px){
+    .center{
+        padding-left: calc(50% - 368px);
+        padding-right: calc(50% - 368px);
+    }
+    .promo{
+        padding-left: calc(50% - 386px);
+        padding-right: calc(50% - 386px);
+    }
+    .promo_heading h1{
+        font-size: 44px;
+    }
+    .promo_heading h2{
+        font-size: 24px;
+    }
+    .offer{
+        
+        grid-template-columns: repeat(3, 231px);
+        grid-template-rows: 167px 116px;
+        gap: 20px;
+        
+     }
+     .catalog{      
+        gap: 16px;
+    }
 }
