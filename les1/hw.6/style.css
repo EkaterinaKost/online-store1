@@ -315,7 +315,7 @@ img {
 
 .subscribe {
     
-    background-image: url("./imgs/Layer\ 41.png");
+    background-image: url("./imgs/Layer41.png");
 }
 
 .subscribe_bck {
@@ -326,6 +326,7 @@ img {
     justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
+    background-size: cover;
 
 
 }
@@ -453,7 +454,7 @@ img {
 }
 
 
-@media(max-width: 1200px) {
+@media(max-width: 1122px) {
     .center {
         padding-left: calc(50% - 500px);
         padding-right: calc(50% - 500px);
@@ -501,7 +502,7 @@ img {
     }
 
     .featuerd_items_header {
-        margin-bottom: 95wpx;
+        margin-bottom: 95px;
     }
 
     .catalog {
@@ -520,7 +521,7 @@ img {
 
     .subscribe {
         padding: 0;
-        background-image: url("./imgs/Layer\ 41mob.png");
+        background-image: url("./imgs/Layer41mob.png");
         background-repeat: no-repeat;
         background-position: center center;
         -webkit-background-size: cover;
@@ -531,6 +532,7 @@ img {
 
     .subscribe_bck {
         flex-direction: column;
+        background-size:cover
     }
 
     .subscribe__img {
@@ -592,6 +594,7 @@ img {
         align-items: center;
         gap: 32px;
         margin-bottom: 64px;
+       
 
 
     }
