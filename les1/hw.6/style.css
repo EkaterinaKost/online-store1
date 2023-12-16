@@ -5,6 +5,7 @@
     padding: 0;
     font-family: 'Lato', sans-serif;
     font-style: normal;
+    box-sizing: border-box;
 }
 
 
@@ -46,11 +47,16 @@ img {
     flex-wrap: nowrap;
     gap: 33px;
 }
-
+.header__left_img {
+    width: 44px;
+    height: 38px;
+}
 .header__left_img:hover {
     transform: scale(1.5);
 }
-
+.header__right_img:hover path {
+    fill: #F26376;    
+}
 .promo img {
     width: 50%;
 }
@@ -202,11 +208,24 @@ img {
 
 .card_button {
     display: none;
-    width: 40%;
+    background-color: transparent;
+    width: 139px;
+    height: 44px;
     margin-left: 111px;
     margin-top: 188px;
+    cursor:pointer;
+    border: 1px solid white;
+    position: relative;
+    
 }
-
+.card_button_add{
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
 .catalog_card__img_wrapper {
     position: absolute;
     top: 0;
@@ -215,13 +234,17 @@ img {
     height: 100%;
     background: rgba(58, 56, 56, 0);
     transition: background 0.5s ease;
+    z-index: 1;
+   
 }
 
-.card_img {
-
-    background-color: #5d5d5d;
+.card_button_add{
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
-
 .catalog__card:hover .catalog_card__img_wrapper {
     display: block;
     background: rgba(58, 56, 56, 0.8);
@@ -251,8 +274,9 @@ img {
 }
 
 .information {
-    padding: 0;
+   
     display: flex;
+    
     justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
@@ -290,7 +314,7 @@ img {
 }
 
 .subscribe {
-    padding: 0px;
+    
     background-image: url("./imgs/Layer\ 41.png");
 }
 
@@ -344,7 +368,7 @@ img {
     font-style: normal;
     font-weight: 700;
     line-height: 167.2%;
-    /* 40.128px */
+    margin-bottom: 32px;
 }
 
 .subscribe__text_right_for {
@@ -397,7 +421,7 @@ img {
 }
 
 .footer {
-    padding: 0px;
+    
     background: #222224;
     display: flex;
     justify-content: space-around;
@@ -427,6 +451,7 @@ img {
 .icon:hover .brand {
     fill: #ffffff;
 }
+
 
 @media(max-width: 1200px) {
     .center {
@@ -520,7 +545,7 @@ img {
         margin-top: 27px;
         margin-bottom: 219px;
     }
-
+   
     .footer {
         justify-content: space-between;
     }
@@ -567,6 +592,7 @@ img {
         align-items: center;
         gap: 32px;
         margin-bottom: 64px;
+
 
     }
 
